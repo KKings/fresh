@@ -1,4 +1,4 @@
-﻿namespace Sitecore.Feature.Indicator.Controllers
+﻿namespace Sitecore.Feature.Freshness.Controllers
 {
     using System.Web.Mvc;
     using Mvc.Controllers;

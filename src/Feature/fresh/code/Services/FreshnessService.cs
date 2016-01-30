@@ -1,4 +1,4 @@
-﻿namespace Sitecore.Feature.Indicator.Services
+﻿namespace Sitecore.Feature.Freshness.Services
 {
     using System;
     using System.Collections.Generic;

@@ -1,5 +1,5 @@
 ﻿
-namespace Sitecore.Feature.Indicator
+namespace Sitecore.Feature.Freshness
 {
     public static class Constants
     {

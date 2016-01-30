@@ -1,4 +1,4 @@
-﻿namespace Sitecore.Feature.Indicator.Pipelines.Freshness
+﻿namespace Sitecore.Feature.Freshness.Pipelines.Freshness
 {
     using Data.Items;
     using Services;

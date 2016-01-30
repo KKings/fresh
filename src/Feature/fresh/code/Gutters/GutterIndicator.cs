@@ -1,4 +1,4 @@
-﻿namespace Sitecore.Feature.Indicator.Gutters
+﻿namespace Sitecore.Feature.Freshness.Gutters
 {
     using System;
     using Configuration;

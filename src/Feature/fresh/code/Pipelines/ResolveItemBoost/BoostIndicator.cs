@@ -1,5 +1,5 @@
 ﻿
-namespace Sitecore.Feature.Indicator.Pipelines.ResolveItemBoost
+namespace Sitecore.Feature.Freshness.Pipelines.ResolveItemBoost
 {
     using ContentSearch.Pipelines.ResolveBoost.ResolveItemBoost;
     using Data.Items;
@@ -8,7 +8,8 @@ namespace Sitecore.Feature.Indicator.Pipelines.ResolveItemBoost
     using Sitecore.Pipelines;
 
     /// <summary>
-    /// 
+    /// Boost the Indexed value of a content item based
+    /// on the freshness factor
     /// </summary>
     public class BoostIndicator : BaseResolveItemBoostPipelineProcessor
     {

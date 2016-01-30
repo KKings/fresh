@@ -15,7 +15,7 @@ name: Type
 key: type
 content-length: 78
 
-Sitecore.Feature.Indicator.Gutters.GutterIndicator, Sitecore.Feature.Indicator
+Sitecore.Feature.Freshness.Gutters.GutterIndicator, Sitecore.Feature.Freshness
 ----field----
 field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
 name: __Sortorder

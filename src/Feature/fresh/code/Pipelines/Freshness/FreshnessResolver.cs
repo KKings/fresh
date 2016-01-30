@@ -1,5 +1,4 @@
-﻿
-namespace Sitecore.Feature.Indicator.Pipelines.Freshness
+﻿namespace Sitecore.Feature.Freshness.Pipelines.Freshness
 {
     using System;
     using System.Collections.Generic;

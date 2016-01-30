@@ -1,5 +1,4 @@
-﻿
-namespace Sitecore.Feature.Indicator.Factors
+﻿namespace Sitecore.Feature.Freshness.Factors
 {
     using Data.Items;
 

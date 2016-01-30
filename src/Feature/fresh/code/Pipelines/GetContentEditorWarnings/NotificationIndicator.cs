@@ -1,4 +1,4 @@
-﻿namespace Sitecore.Feature.Indicator.Pipelines.GetContentEditorWarnings
+﻿namespace Sitecore.Feature.Freshness.Pipelines.GetContentEditorWarnings
 {
     using System;
     using Data.Items;
@@ -7,17 +7,12 @@
     using Services;
     using Sitecore.Pipelines;
     using Sitecore.Pipelines.GetContentEditorWarnings;
-    using Sitecore.Pipelines.GetPageEditorNotifications;
 
     /// <summary>
-    /// 
+    /// Adds a content editor notification for freshness
     /// </summary>
     public class NotificationIndicator
     {
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <param name="args"></param>
         public void Process(GetContentEditorWarningsArgs args)
         {
             Assert.ArgumentNotNull(args, "args");
@@ -37,7 +32,7 @@
                 : String.Format(Constants.StaleNotificationMessage, args.Item.Name);
 
             var warning = args.Add();
-            warning.Title = "Freshness Alert";
+            warning.Title = Globalization.Translate.Text("Freshness Alert");
             warning.Text = message;
         }
     }
