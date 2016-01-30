@@ -15,7 +15,6 @@ namespace Sitecore.Feature.Freshness.Controllers
 
     public class TestController : SitecoreController
     {
-
         public ActionResult Freshy(Guid id, DateTime dt)
         {
             var database = Sitecore.Configuration.Factory.GetDatabase("master");
