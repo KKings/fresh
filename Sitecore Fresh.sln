@@ -17,6 +17,13 @@ Project("{CAA73BB0-EF22-4D79-A57E-DF67B3BA9C80}") = "Indicator.Tds.Core", "src\F
 EndProject
 Project("{CAA73BB0-EF22-4D79-A57E-DF67B3BA9C80}") = "Indicator.Tds.Master", "src\Feature\fresh\tds\Indicator.Tds.Master\Indicator.Tds.Master.scproj", "{3F4E982C-B940-491C-83CF-CAFC0542320B}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Configuration", "Configuration", "{AA08BC0A-EBB6-4AF6-ABC8-833C6E1FCF33}"
+	ProjectSection(SolutionItems) = preProject
+		gulp-config.js = gulp-config.js
+		gulpfile.js = gulpfile.js
+		package.json = package.json
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
