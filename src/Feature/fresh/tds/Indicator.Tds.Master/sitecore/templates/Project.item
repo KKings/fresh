@@ -1,18 +1,25 @@
 ----item----
 version: 1
-id: {F7CF8EBD-6EC0-467A-92F0-E28EC0AD0F6E}
+id: {825B30B4-B40B-422E-9920-23A1B6BDA89C}
 database: master
-path: /sitecore/templates/Feature/News
-parent: {8F343079-3CC5-4EF7-BC27-32ADDB46F45E}
-name: News
+path: /sitecore/templates/Project
+parent: {3C1715FE-6A13-4FCF-845F-DE308BA9741D}
+name: Project
 master: {00000000-0000-0000-0000-000000000000}
 template: {0437FEE2-44C9-46A6-ABE9-28858D9FEE8C}
 templatekey: Template Folder
 
+----field----
+field: {06D5295C-ED2F-4A54-9BF2-26228D113318}
+name: __Icon
+key: __icon
+content-length: 36
+
+applications/32x32/folder_window.png
 ----version----
 language: en
 version: 1
-revision: 29f83a84-6b77-41b8-8418-20b08ee54175
+revision: eb28b36d-8a7f-408d-8ef2-5e501f74d9e6
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -20,7 +27,7 @@ name: __Created
 key: __created
 content-length: 16
 
-20150824T171225Z
+20150921T023303Z
 ----field----
 field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
 name: __Created by
@@ -34,14 +41,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-29f83a84-6b77-41b8-8418-20b08ee54175
+eb28b36d-8a7f-408d-8ef2-5e501f74d9e6
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20160127T104648Z
+20160127T104608Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

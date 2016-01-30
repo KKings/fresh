@@ -1,10 +1,10 @@
 ----item----
 version: 1
-id: {74889B26-061C-4D6A-8CDB-422665FC34EC}
+id: {B69277AD-E917-4B9F-9136-A12E0A3E462F}
 database: master
-path: /sitecore/templates/Feature/News/_NewsFolder
-parent: {F7CF8EBD-6EC0-467A-92F0-E28EC0AD0F6E}
-name: _NewsFolder
+path: /sitecore/templates/Project/Habitat/Page Types/News Article
+parent: {85086BB5-0365-48D7-98B1-CB9B1B6392CA}
+name: News Article
 master: {00000000-0000-0000-0000-000000000000}
 template: {AB86861A-6030-46C5-B394-E8F99E8B87DB}
 templatekey: Template
@@ -13,20 +13,27 @@ templatekey: Template
 field: {12C33F3F-86C5-43A5-AEB4-5598CEC45116}
 name: __Base template
 key: __base template
+content-length: 194
+
+{2F75C8AF-35FC-4A88-B585-7595203F442C}|{91962B60-25F6-428F-8D10-02AA1E49D6A5}|{D88CCD80-D851-470D-AF11-701FF23504E7}|{BDD24F35-05E8-4466-8798-7D3DD6A6C991}|{8FD6C8B6-A9A4-4322-947E-90CE3D94916D}
+----field----
+field: {F7D48A55-2158-4F02-9356-756654404F73}
+name: __Standard values
+key: __standard values
 content-length: 38
 
-{1930BBEB-7805-471A-A3BE-4858AC7CF696}
+{5FE4D0ED-177A-4111-80A0-D1CB6F4718AD}
 ----field----
 field: {06D5295C-ED2F-4A54-9BF2-26228D113318}
 name: __Icon
 key: __icon
-content-length: 32
+content-length: 22
 
-Applications/32x32/form_blue.png
+Network/16x16/news.png
 ----version----
 language: en
 version: 1
-revision: 5a372823-1101-4bc8-9105-9e9e210ca839
+revision: 6ef6da92-43ac-4cb1-a2cb-c8068a268192
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -34,7 +41,7 @@ name: __Created
 key: __created
 content-length: 16
 
-20150827T051656Z
+20150824T175419Z
 ----field----
 field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
 name: __Created by
@@ -48,14 +55,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-5a372823-1101-4bc8-9105-9e9e210ca839
+6ef6da92-43ac-4cb1-a2cb-c8068a268192
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20160127T104649Z
+20160127T104712Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
