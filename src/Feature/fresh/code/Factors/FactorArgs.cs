@@ -1,5 +1,5 @@
 ﻿
-namespace Sitecore.Feature.Indicator.Services
+namespace Sitecore.Feature.Indicator.Factors
 {
     using Data.Items;
 

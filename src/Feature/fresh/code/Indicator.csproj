@@ -57,10 +57,15 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Gutters\GutterIndicator.cs" />
+    <Compile Include="Pipelines\Freshness\FreshnessResolver.cs" />
     <Compile Include="Pipelines\GetContentEditorWarnings\NotificationIndicator.cs" />
     <Compile Include="Pipelines\GetPageEditorNotifications\NotificationIndicator.cs" />
     <Compile Include="Pipelines\ResolveItemBoost\BoostIndicator.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Factors\FactorArgs.cs" />
+    <Compile Include="Factors\IFactor.cs" />
+    <Compile Include="Factors\UpdatedBoostFactor.cs" />
+    <Compile Include="Services\IFreshnessService.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App_Config\Include\Feature\Fresh.Indicator.config" />

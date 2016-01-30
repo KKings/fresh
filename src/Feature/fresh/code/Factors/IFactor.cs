@@ -1,5 +1,5 @@
 ﻿
-namespace Sitecore.Feature.Indicator.Services
+namespace Sitecore.Feature.Indicator.Factors
 {
     /// <summary>
     /// Factor implementation for resolving a factor
