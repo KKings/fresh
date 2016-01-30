@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fresh", "src\Project\Fresh\code\Fresh.csproj", "{520484A6-8342-4130-B7CF-7DD76E38E9C0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Projects", "Projects", "{501EF0D5-8A6C-42CC-AFA6-FAB70AB0BC80}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Framework", "Framework", "{308CB180-65E9-4E56-AA73-77DBBF0F0C0D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Feature", "Feature", "{02135549-F104-47C3-A8C3-B8EEFFE6C920}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Indicator", "src\Feature\fresh\code\Indicator.csproj", "{F5F9BEC3-F9BF-4DF9-87CA-D9B268AD66E0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{520484A6-8342-4130-B7CF-7DD76E38E9C0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{520484A6-8342-4130-B7CF-7DD76E38E9C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{520484A6-8342-4130-B7CF-7DD76E38E9C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{520484A6-8342-4130-B7CF-7DD76E38E9C0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F5F9BEC3-F9BF-4DF9-87CA-D9B268AD66E0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F5F9BEC3-F9BF-4DF9-87CA-D9B268AD66E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F5F9BEC3-F9BF-4DF9-87CA-D9B268AD66E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F5F9BEC3-F9BF-4DF9-87CA-D9B268AD66E0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{520484A6-8342-4130-B7CF-7DD76E38E9C0} = {501EF0D5-8A6C-42CC-AFA6-FAB70AB0BC80}
+		{F5F9BEC3-F9BF-4DF9-87CA-D9B268AD66E0} = {02135549-F104-47C3-A8C3-B8EEFFE6C920}
+	EndGlobalSection
+EndGlobal
