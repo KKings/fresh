@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<configuration xmlns:patch="http://www.sitecore.net/xmlconfig/" xmlns:set="http://www.sitecore.net/xmlconfig/set/">
+  <sitecore>
+    <pipelines>
+      
+      <indexing.resolveItemBoost>
+        <!--
+        During indexing, add a dynamic value to the scoring based on how 'fresh' the content is
+        -->
+        <processor patch:after="processor[@type='Sitecore.ContentSearch.Pipelines.ResolveBoost.ResolveItemBoost.GlobalRuleBasedItemBoostResolver, Sitecore.ContentSearch']" 
+                   type="Sitecore.Feature.Indicator.Pipelines.ResolveItemBoost.BoostIndicator, Sitecore.Feature.Indicator"/>
+      </indexing.resolveItemBoost>
+
+
+      <getContentEditorWarnings>
+        <!-- 
+          Adds Content Editor Notifications for Freshness
+          -->
+        <processor type="Sitecore.Feature.Indicator.Pipelines.GetContentEditorWarnings.IndicatorNotifiation, Sitecore.Feature.Indicator"></processor>
+      </getContentEditorWarnings>
+
+      <getPageEditorNotifications>
+        <!-- 
+          Adds Experience Editor Notifications for Freshness
+          -->
+        <processor type="Sitecore.Feature.Indicator.Pipelines.GetPageEditorNotifications.IndicatorNotifiation, Sitecore.Feature.Indicator"></processor>
+      </getPageEditorNotifications>
+    </pipelines>
+  </sitecore>
+</configuration>
