@@ -5,7 +5,6 @@
     using System.Linq;
     using Data.Items;
     using Factors;
-    using Pipelines.Freshness;
 
     public class FreshnessService : IFreshnessService
     {

@@ -2,7 +2,10 @@
 namespace Sitecore.Feature.Indicator.Pipelines.ResolveItemBoost
 {
     using ContentSearch.Pipelines.ResolveBoost.ResolveItemBoost;
+    using Data.Items;
     using Diagnostics;
+    using Freshness;
+    using Sitecore.Pipelines;
 
     /// <summary>
     /// 
@@ -17,7 +20,22 @@ namespace Sitecore.Feature.Indicator.Pipelines.ResolveItemBoost
         {
             Assert.ArgumentNotNull(args, "args");
 
-            // Add additional logic
+            if (args.ResolvedBoost < 0
+                || (args.ResolvedBoost > 0 && args.ResolvedBoost < 1))
+            {
+                return;
+            }
+
+            // Retrieve the indexed item from the IIndexable passed through pipeline arguments
+            var item = (Item)(args.Indexable as ContentSearch.SitecoreIndexableItem);
+            
+            var freshnessArgs = new FreshnessArgs(item);
+
+            CorePipeline.Run(Constants.FreshnessPipeline, freshnessArgs);
+
+            var weight = (float)(freshnessArgs.FreshnessRating.Score/100) + 1;
+
+            args.ResolvedBoost *= weight;
         }
     }
 }
