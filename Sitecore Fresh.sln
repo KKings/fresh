@@ -11,7 +11,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Framework", "Framework", "{
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Feature", "Feature", "{02135549-F104-47C3-A8C3-B8EEFFE6C920}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Indicator", "src\Feature\fresh\code\Indicator.csproj", "{F5F9BEC3-F9BF-4DF9-87CA-D9B268AD66E0}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Freshness", "src\Feature\fresh\code\Freshness.csproj", "{F5F9BEC3-F9BF-4DF9-87CA-D9B268AD66E0}"
 EndProject
 Project("{CAA73BB0-EF22-4D79-A57E-DF67B3BA9C80}") = "Indicator.Tds.Core", "src\Feature\fresh\tds\Indicator.Tds.Core\Indicator.Tds.Core.scproj", "{B07A0649-0A65-443B-8234-C8EF94406539}"
 EndProject

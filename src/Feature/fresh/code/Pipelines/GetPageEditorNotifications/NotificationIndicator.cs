@@ -1,7 +1,6 @@
-﻿namespace Sitecore.Feature.Indicator.Pipelines.GetPageEditorNotifications
+﻿namespace Sitecore.Feature.Freshness.Pipelines.GetPageEditorNotifications
 {
     using System;
-    using Data.Items;
     using Diagnostics;
     using Freshness;
     using Services;
@@ -9,7 +8,7 @@
     using Sitecore.Pipelines.GetPageEditorNotifications;
 
     /// <summary>
-    /// 
+    /// Adds an experience editor alert if the content is stale or ew
     /// </summary>
     public class NotificationIndicator : GetPageEditorNotificationsProcessor
     {
@@ -35,7 +34,7 @@
                 ? String.Format(Constants.EwNotificationMessage, args.ContextItem.Name)
                 : String.Format(Constants.StaleNotificationMessage, args.ContextItem.Name);
 
-            var editorNotification = new PageEditorNotification(Sitecore.Globalization.Translate.Text(message),
+            var editorNotification = new PageEditorNotification(Globalization.Translate.Text(message),
                 PageEditorNotificationType.Warning);
 
             args.Notifications.Add(editorNotification);

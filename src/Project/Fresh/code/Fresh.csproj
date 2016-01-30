@@ -104,9 +104,9 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\..\Feature\fresh\code\Indicator.csproj">
+    <ProjectReference Include="..\..\..\Feature\fresh\code\Freshness.csproj">
       <Project>{f5f9bec3-f9bf-4df9-87ca-d9b268ad66e0}</Project>
-      <Name>Indicator</Name>
+      <Name>Freshness</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>

@@ -1,5 +1,5 @@
 ﻿
-namespace Sitecore.Feature.Indicator.Controllers
+namespace Sitecore.Feature.Freshness.Controllers
 {
     using System;
     using System.Globalization;
