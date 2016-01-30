@@ -61,7 +61,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Constants.cs" />
-    <Compile Include="Controllers\TestController.cs" />
+    <Compile Include="Controllers\FreshnessController.cs" />
     <Compile Include="Gutters\GutterIndicator.cs" />
     <Compile Include="Pipelines\Freshness\FreshnessArgs.cs" />
     <Compile Include="Pipelines\Freshness\FreshnessResolver.cs" />
@@ -79,6 +79,10 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App_Config\Include\Feature\Fresh.Indicator.config" />
+    <Content Include="css\style.css" />
+    <Content Include="Views\Freshness\Freshometer.cshtml" />
+    <None Include="Views\web.config" />
+    <None Include="Views\Website\Layouts\Default.cshtml" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

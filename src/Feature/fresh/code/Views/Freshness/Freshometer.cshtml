@@ -1,0 +1,23 @@
+﻿@model Sitecore.Feature.Indicator.Services.FreshnessRating
+
+<style>
+     #freshometer.Ew {
+         background-color: red;
+     }
+
+    #freshometer.Stale {
+        background-color: yellow;
+    }
+
+    #freshometer.Fresh {
+        background-color: green;
+    }
+</style>
+
+<p>
+    <label>
+        <span>Content Health:</span>
+        <progress id="freshometer" class="@Model.Freshometer" value="@Model.Score" max="100"></progress>
+        <span>@Model.Freshometer</span>
+    </label>
+</p>
