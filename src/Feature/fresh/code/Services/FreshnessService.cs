@@ -3,15 +3,42 @@
     using System;
     using System.Collections.Generic;
     using System.Linq;
-    using System.Text;
-    using System.Threading.Tasks;
+    using Data.Items;
     using Factors;
+    using Pipelines.Freshness;
 
     public class FreshnessService : IFreshnessService
     {
-        public Single Resolve(IList<IFactor> factors)
+        /// <summary>
+        /// Reslves the Freshness
+        /// </summary>
+        /// <param name="item">Item</param>
+        /// <param name="factors">Configured Factors</param>
+        /// <returns>Resolved freshness</returns>
+        public FreshnessRating Resolve(Item item, IList<IFactor> factors)
         {
-            throw new NotImplementedException();
+            var score = (factors.Select(m => m.Score(item)).Sum()/factors.Count);
+
+            Freshometer freshness;
+
+            if (score < 33)
+            {
+                freshness = Freshometer.Ew;
+            }
+            else if (score < 66 && score >= 33)
+            {
+                freshness = Freshometer.Stale;
+            }
+            else
+            {
+                freshness = Freshometer.Fresh;
+            }
+
+            return new FreshnessRating
+            {
+                Score = (factors.Select(m => m.Score(item)).Sum()/factors.Count),
+                Freshometer = freshness
+            };
         }
     }
 }

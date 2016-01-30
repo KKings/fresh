@@ -48,6 +48,10 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Web.Mvc, Version=4.0.0.1, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\packages\Microsoft.AspNet.Mvc.5.2.3\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -56,7 +60,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Constants.cs" />
+    <Compile Include="Controllers\TestController.cs" />
     <Compile Include="Gutters\GutterIndicator.cs" />
+    <Compile Include="Pipelines\Freshness\FreshnessArgs.cs" />
     <Compile Include="Pipelines\Freshness\FreshnessResolver.cs" />
     <Compile Include="Pipelines\GetContentEditorWarnings\NotificationIndicator.cs" />
     <Compile Include="Pipelines\GetPageEditorNotifications\NotificationIndicator.cs" />
@@ -65,7 +72,10 @@
     <Compile Include="Factors\FactorArgs.cs" />
     <Compile Include="Factors\IFactor.cs" />
     <Compile Include="Factors\UpdatedBoostFactor.cs" />
+    <Compile Include="Services\FreshnessService.cs" />
+    <Compile Include="Services\Freshometer.cs" />
     <Compile Include="Services\IFreshnessService.cs" />
+    <Compile Include="Services\Rating.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App_Config\Include\Feature\Fresh.Indicator.config" />

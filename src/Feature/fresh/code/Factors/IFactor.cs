@@ -1,16 +1,23 @@
 ﻿
 namespace Sitecore.Feature.Indicator.Factors
 {
+    using Data.Items;
+
     /// <summary>
     /// Factor implementation for resolving a factor
     /// </summary>
     public interface IFactor
     {
         /// <summary>
+        /// Gets or sets the Factor Weight
+        /// </summary>
+        int MaxValue { get; set; }
+
+        /// <summary>
         /// Resolves the boost for the factor
         /// </summary>
-        /// <param name="args">The args</param>
+        /// <param name="item">The item</param>
         /// <returns><c>Float</c> indicating the boost fro the factor</returns>
-        float Boost(FactorArgs args);
+        decimal Score(Item item);
     }
 }

@@ -2,6 +2,7 @@
 {
     using System;
     using Data.Fields;
+    using Data.Items;
     using Diagnostics;
 
     /// <summary>
@@ -15,37 +16,37 @@
         /// to determine whether to boost that item due to its freshness.
         /// Defaults to the number of days in the previous month.
         /// </summary>
-        public int? MaxDays { get; set; }
+        public int MaxDays { get; set; }
 
         /// <summary>
-        /// Maximum value for the boost. Defaults to 5.
+        /// Gets or sets the Max value
         /// </summary>
-        public int? MaxBoost { get; set; }
+        public int MaxValue { get; set; }
 
         /// <summary>
         /// Resolves the boost by calculating how fresh the content is 
         /// by the Current Date minus the last updated date
         /// </summary>
-        /// <param name="args">The args</param>
+        /// <param name="item">The item</param>
         /// <returns><c>Boost</c> value</returns>
-        public float Boost(FactorArgs args)
+        public decimal Score(Item item)
         {
-            Assert.ArgumentNotNull(args, "args");
+            Assert.ArgumentNotNull(item, "item");
 
-            var displayDate = (DateField)args.Item.Fields[FieldIDs.Updated];
+            var displayDate = (DateField)item.Fields[FieldIDs.Updated];
 
             if (displayDate == null)
             {
                 return 0;
             }
 
-            if (!this.MaxDays.HasValue)
+            if (this.MaxDays == Int32.MinValue || this.MaxDays == 0)
             {
                 this.MaxDays = DateTime.DaysInMonth(DateTime.Now.Year, DateTime.Now.Month - 1);
             }
 
             // Date for comparison
-            var when = DateTime.Now.AddDays(-this.MaxDays.Value);
+            var when = DateTime.Now.AddDays(-this.MaxDays);
 
             // Difference between updated date and comparison date
             var difference = displayDate.DateTime - when;
@@ -54,13 +55,8 @@
             {
                 return 0 ;
             }
-
-            if (!this.MaxBoost.HasValue)
-            {
-                this.MaxBoost = 5;
-            }
             
-            return ((((float)this.MaxBoost.Value - 1) / this.MaxDays.Value) * (float)difference.TotalDays);
+            return ((decimal)this.MaxValue - 1) / this.MaxDays * (decimal)difference.TotalDays;
         }
     }
 }
